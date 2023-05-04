@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="shortcut icon" type="images/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./DQ3.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <div id="top1"><span class="t1">家用电器</span><span class="t2">模板</span></div>
+            <div class="top2">
+                <ul>
+                    <li><a href="./index.html">首页<a></li>
+                    <li><a href="./DQ1.html">产品中心<a></li>
+                    <li><a href="./DQ2.html">新闻动态</a></li>
+                    <li><a href="./DQ3.html">关于我们</a></li>
+                    <li><a href="./DQ4.html">服务中心</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="gx"><img src="./image3/box-11.jpg" id="gx"></div>
+            <div class="gx1">BOUTIQUE DESIGN</div>
+            <div class="gx2"><img src="./image3/box-2.png" ></div>
+            <div class="gx3">个性化定制</div>
+            <div class="gx4">
+                <div class="ts1">
+                    <div class="imgbox">
+                        <span class="gxx4"><img src="./image3/box1-1.png" alt="" id="gxx4"></span>
+                    </div>
+                </div>
+                <div class="ts2">
+                    <div class="imgbox1">
+                        <span class="gxx5"><img src="./image3/box1-2.png" alt="" id="gxx5"></span>
+                    </div>
+                </div>
+
+
+                <div class="ts3">
+                    <div class="imgbox2">
+                        <span class="gxx6"><img src="./image3/box1-3.png" alt="" id="gxx6"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="gx5">
+                <div class="gx6">能专人定制，告别千篇一律</div>
+                <div class="gx7">国际设计师 潮流设计理念</div>
+                <div class="gx8">使用环保材料，给你健康安心使用</div>
+            </div>
+
+
+            <div class="box2">
+                <div class="gx1">THE COMPANY CULTURE</div>
+                <div class="gx2"><img src="./image3/box-2.png" alt=""></div>
+                <div class="gx13">公司文化</div>
+
+                <div class="wh">
+                    <div class="wh1"><img src="./image3/box2-1.png" alt=""></div>
+                    <div class="wh2">
+                        <p>家用电器使人们从繁重、琐碎、费时的家务劳动中解<br>
+                            放出来，为人类创造了更为舒适优美、更有利于身心<br>
+                            健康的生活和工作环境，提供了丰富多彩的文化娱乐<br>
+                            条件，已成为现代家庭生活的必需品。家用电器问世<br>
+                            已有近百年历史，美国被认为是家用电器的发祥地。</p>
+                    </div>
+                    <div class="wh3"></div>
+                    <div class="wh4">MORE</div>
+                </div>
+                <div class="box3">
+                    <div class="gx1">&nbsp;&nbsp;VENDOR ZONE</div>
+                    <div class="gx2"><img src="./image3/box-2.png" alt=""></div>
+                    <div class="gx13">厂商专区</div>
+
+                    <div class="cs">
+
+                        <span class="cs1"><img src="./image3/box3-1.png" alt=""></span>
+                        <span class="cs2"><img src="./image3/box3-2.png" alt=""></span>
+                        <span class="cs3"><img src="./image3/box3-3.png" alt=""></span>
+                    </div>
+                    <div class="css1">
+                        <span class="cs4"><img src="./image3/box3-4.png" alt=""></span>
+                        <span class="cs5"><img src="./image3/box3-5.png" alt=""></span>
+                        <span class="cs6"><img src="./image3/box3-6.png" alt=""></span>
+
+                    </div>
+                </div>
+
+                <div class="box5">
+                    <div class="out1">
+
+                        <ul>
+                            <li class="out">首页</li>
+                            <li class="out">产品中心</li>
+                            <li class="out">新闻动态</li>
+                            <li class="out">关于我们</li>
+                            <li class="out">服务中心</li>
+                        </ul>
+                        <hr class="out2">
+                    </div>
+
+
+
+
+                    <div class="out4">
+
+                        <span class="out5">手机版 <span class="out6">|本站使用</span>
+                            <img src="./images/box9.png">凡科建站
+                            <span>搭建</span>
+
+                            <span class="out3">©2023 - 我的网站 版权所有</span>
+                            <span class="out7">|管理登陆</span>
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+</body>
+<script src="./jquery.v3.6.3.js"></script>
+<script>
+
+//版心
+$(window).resize(function () {
+
+var win = $(this).width();
+
+if (win < 1493) { //宽度小于1493时，按1493和窗口实际宽度计算等比
+
+$("body").css("zoom", win / 1493);
+
+}else{
+
+$("body").css("zoom", "normal");
+
+}
+
+}).trigger('resize');
+
+
+    $('.box1').hover(function () {
+        $(this).fadeIn(1000, 0.1)
+        $('.gx1,.gx2,.gx3,.gx13').animate({
+            position: 'relative',
+            left: '-20px'
+        }, 1000).show()
+        $(this).fadeIn(1000, 0.1)
+        $('.gx4,.gx5').animate({
+            position: 'relative',
+            left: '-40px'
+        }, 1000)
+
+
+    })
+
+    $('.wh').stop().hover(function () {
+        $(this).fadeIn(1000, 0.1)
+        $('.wh2').stop().animate({
+            position: 'relative',
+            left: '-20px'
+        }, 1000)
+
+        $('.wh1').stop().animate({
+            position: 'relative',
+            left: '10px'
+        }, 1000)
+
+    })
+    $('.box3').hover(function () {
+        $(this).fadeIn(1000, 0.1)
+        $('.cs1,.cs2,.cs3,.cs4,.cs5,.cs6').animate({
+            position: 'relative',
+            left: '20px'
+        }, 500)
+    })
+
+    $('.ts1').hover(function () {
+
+        $(".imgbox").animate({
+            width: "400px"
+        })
+        $('#gxx4').animate({
+            marginLeft: "-20px",
+
+        })
+    }, function () {
+        $('#gxx4').animate({
+            marginLeft: "0"
+        })
+    })
+
+    $('.ts2').hover(function () {
+
+        $(".imgbox1").animate({
+            width: "400px"
+        })
+        $('#gxx5').animate({
+            marginLeft: "-20px",
+
+        })
+    }, function () {
+        $('#gxx5').animate({
+            marginLeft: "0"
+        })
+    })
+
+    $('.ts3').hover(function () {
+
+        $(".imgbox2").animate({
+            width: "400px"
+        })
+        $('#gxx6').animate({
+            marginLeft: "-20px",
+
+        })
+    }, function () {
+        $('#gxx6').animate({
+            marginLeft: "0"
+        })
+    })
+</script>
+
+</html>

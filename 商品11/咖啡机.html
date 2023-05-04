@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="images/x-icon" href="./favicon.ico" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .t1 {
+            position: relative;
+            font-size: 30px;
+            margin-left: 350px;
+            color: rgb(52, 101, 248);
+            font-weight: 400;
+            margin-top: 30px;
+            top: 10px;
+            background-color: white;
+        }
+
+        .t2 {
+            width: 800px;
+            height: 100px;
+            position: relative;
+            float: right;
+            right: 220px;
+            top: -40px;
+            /* left: 200px; */
+        }
+
+
+        ul li {
+            font-size: 18px;
+            list-style-type: none;
+            float: left;
+            padding: 20px;
+
+        }
+
+        li:hover {
+            color: blue;
+            border-bottom: 1px solid blue;
+        }
+
+        .t3 {
+            width: 100%;
+            height: 400px;
+            margin-top: -40px;
+        }
+
+        .t4 {
+            width: 100%;
+            margin-top: -50px;
+        }
+
+        .box2 {
+            width: 1200px;
+            height: 500px;
+            margin-top: 100px;
+            margin-left: 360px;
+        }
+
+        .xq1 {
+            position: relative;
+            font-size: 16px;
+            border-bottom: 1px solid rgb(209, 209, 209);
+            color: blue;
+            margin-top: 40px;
+            top: 40px;
+        }
+
+        .qx {
+            width: 350px;
+            height: 350px;
+            border: 1px solid rgb(209, 209, 209);
+            margin-top: 80px;
+        }
+
+        .qx1 {
+            position: relative;
+            width: 280px;
+            height: 300px;
+            top: 20px;
+            margin-left: 40px;
+           
+        }
+
+        /* .qx2{
+            width: 450px;
+            height: 450px;
+            border: 1px solid rgb(0, 0, 0);
+        } */
+        .xq3 {
+            position: relative;
+            width: 800px;
+            /* border-bottom: 1px solid black; */
+            margin-left: 380px;
+            top: -350px;
+            margin-top: -20px;
+        }
+
+        .xq4 {
+
+            position: relative;
+            font-size: 20px;
+            font-family: 400;
+            margin-left: 20px;
+            top: -10px;
+
+        }
+
+        .xq5 {
+            position: relative;
+            font-size: 20px;
+            font-family: 400;
+            margin-left: 20px;
+            top: 10px;
+
+        }
+
+        .xq6 {
+
+            width: 600px;
+            color: blue;
+            font-size: 24px;
+            top: -200px;
+            margin-top: -20px;
+            font-weight: 800;
+        }
+
+        .xqq1 {
+            position: relative;
+            width: 800px;
+            border-bottom: 1px solid black;
+            margin-left: 380px;
+            top: -440px;
+            margin-top: -20px;
+        }
+
+        .xq7 {
+            position: relative;
+            width: 600px;
+            font-size: 16px;
+            top: 20px;
+            font-weight: 100;
+            margin-left: 16px;
+            color: rgb(103, 103, 103);
+        }
+
+        .xqq2 {
+            position: relative;
+            width: 160px;
+            height: 40px;
+            border: 1px solid black;
+            margin-left: 400px;
+            top: -260px;
+            margin-top: -20px;
+            /* z-index: -1 */
+        }
+
+        .xq8 {
+            position: relative;
+            left: -120px;
+            top: 95px;
+        }
+
+        /* 电话 */
+        #aa {
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .box4 {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .fx {
+            position: relative;
+            font-size: 20px;
+            margin-top: -40px;
+            top: -10px;
+        }
+
+        /* 二维码 */
+        .weixin {
+            position: relative;
+        }
+
+        .weixin img.qrcode {
+            position: absolute;
+            z-index: 99;
+            width: 35.5rem;
+            max-width: none;
+            height: 35.5rem;
+            transform: scale(0);
+            transform-origin: top center;
+            opacity: 0;
+            border: .3125rem solid #0085ba;
+            border-radius: .25rem;
+            -webkit-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+            margin-top: -500px;
+            margin-left: 350px;
+        }
+
+        .weixin:hover img.qrcode {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .box5{
+            width: 400px;
+            margin-left: 900px;
+            
+        }
+        .box6{
+            width: 1200px;
+            height: 20px;
+            margin: 0 auto;
+            
+        }
+        .xqa1{
+            position: relative;
+            width: 100px;
+            height: 40px;
+            border: 1px solid blue;
+            border-bottom: 0px;
+            margin-top: 20px;
+            border-top: 2px solid blue;
+            /* margin-left: 350px; */
+
+        }
+        .xqa2{
+            position: relative;
+            width: 120px;
+            /* height: 40px; */
+            margin-left: 20px;
+            /* top: 100px; */
+            margin-top: 10px;
+            
+        }
+        .xqa3{
+            width: 1200px;
+          
+            border-bottom: 1px solid blue;
+            
+        }
+        .xqa4{
+            width: 1200px;
+            height: 20px;
+            border-bottom: 1px solid rgb(45, 45, 240);
+            margin-left: 100px;
+            margin-top: -11px;
+        }
+
+    /* 底片     */
+.box9 {
+    text-align: center;
+    width: 100%;
+    height: 260px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.out {
+    font-size: 10px;
+    margin-top: 45px;
+}
+
+.out1 {
+
+    margin: 0 auto;
+
+    margin-top: 100px;
+    left: 710px;
+    margin-left: 710px;
+}
+
+.out2 {
+    float: left;
+    width: 450px;
+
+    position: relative;
+    top: 120px;
+    right: 440px;
+    /* background-color: #4b4b4b; */
+}
+
+.out3 {
+
+    position: relative;
+    bottom: 40px;
+    left: 80px
+}
+
+.out4 {
+    width: 300px;
+    height: 100px;
+
+}
+
+.out5 {
+    position: relative;
+    width: 800px;
+    /* height: 50px; */
+    left: 740px;
+    top: 80px;
+
+}
+
+#a {
+    margin-top: 10px;
+}
+
+.out5:hover {
+    color: #007aff;
+}
+
+.out7 {
+    position: relative;
+    left: 60px;
+    top: -20px;
+}
+
+/* 回到顶部 */
+.rTop {
+      width: 50px;
+      height: 60px;
+      text-align: center;
+      font-size: small;
+      line-height: 25px;
+      /* border: 1px solid #00bbff; */
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      border-bottom-color: #333;
+      border-right-color: #333;
+      margin: 5px;
+      cursor: pointer;
+      display: none
+      
+    }
+/* .rTop:hover{
+        opacity: 0;
+    } */
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <div class="t1">我的网站</div>
+            <div class="t2">
+
+                <ul>
+                    <li><a href="../DQ.html">首页</a></li>
+                    <li><a href="../DQ1.html">产品中心</a></li>
+                    <li><a href="../DQ2.html">新闻动态</a></li>
+                    <li><a href="../DQ3.html">关于我们</a></li>
+                    <li><a href="../DQ4.html">服务中心</a></li>
+                </ul>
+
+
+            </div>
+
+            <div class="t3"><img src="../image1/111.jpg" class="t4"></div>
+        </div>
+        <div class="box2">
+            <div class="xq1">产品详情</div>
+            <div class="xq2">
+                <div class="qx">
+                    <span> <img src="../images/qx3.png" class="qx1"></span>
+
+                </div>
+                <div class="xq3">
+                    <span class="xq4">11片电热油汀取暖器/电暖器</span><br>
+
+                    <span class="xq5">品牌价：<span class="xq6">￥2499.00</span></span><br>
+                    <span class="xq7">类型：取暖器</span><br>
+                    <span class="xq7">品牌：Electrical design</span><br>
+                    <span class="xq7">型号：Electrical-111</span>
+                    <span class="xq8"><img src="./电话 (1).png">
+                    </span>
+                </div>
+                <div class="xqq1"></div>
+                <!-- <div class=""></div> -->
+                <div class="xqq2"> <a href="tel:13800000000" id="aa">13800000000</a></div>
+                <div class="xqq3"></div>
+            </div>
+        </div>
+        <div class="box4">
+            <span class="fx">分享到：</span>
+            <span class="wx"><a class="social weixin" href="javascript:" title="分享微信">
+                    <img class="qrcode" src="./二维码.jpg" alt="联系方式">
+                    <img src="./微信图标.png" alt="微信二维码" style="width: 30px;">
+                </a></span>
+            <span class="wb"><a href="https://service.weibo.com/share/share.php?title=%E3%80%9011%E7%89%87%E7%94%B5%E7%83%AD%E6%B2%B9%E6%B1%80%E5%8F%96%E6%9A%96%E5%99%A8%2F%E7%94%B5%E6%9A%96%E5%99%A8%E3%80%91&url=https%3A%2F%2Ffkdq01.icoc.me%2F%2Fpd.jsp%3F_sc%3D3%26id%3D16#_loginLayer_1677726230702"><img
+                        src="./微博.png" alt=""><a></span>
+            <span class="kj"><a href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=https%3A%2F%2Ffkdq01.icoc.me%2F%2Fpd.jsp%3F_sc%3D3%26id%3D16&url=https%3A%2F%2Ffkdq01.icoc.me%2F%2Fpd.jsp%3F_sc%3D3%26id%3D16&pics=http%3A%2F%2F11298683.s61i.faiusr.com%2F2%2FAD0I_86xBRACGAAgqPW1wAUo6cjlDTCTAjisAg.jpg&title=%E3%80%9011%E7%89%87%E7%94%B5%E7%83%AD%E6%B2%B9%E6%B1%80%E5%8F%96%E6%9A%96%E5%99%A8%2F%E7%94%B5%E6%9A%96%E5%99%A8%E3%80%91"><img
+                        src="./QQ空间.png" alt=""><a> </span>
+            <span class="db"><a href="https://accounts.douban.com/passport/login?redir=https%3A//www.douban.com/share/service%3Fname%3D%25E3%2580%259011%25E7%2589%2587%25E7%2594%25B5%25E7%2583%25AD%25E6%25B2%25B9%25E6%25B1%2580%25E5%258F%2596%25E6%259A%2596%25E5%2599%25A8%252F%25E7%2594%25B5%25E6%259A%2596%25E5%2599%25A8%25E3%2580%2591https%253A%252F%252Ffkdq01.icoc.me%252F%252Fpd.jsp%253F_sc%253D3%2526id%253D16%26text%3Dhttps%253A%252F%252Ffkdq01.icoc.me%252F%252Fpd.jsp%253F_sc%253D3%2526id%253D16%26image%3Dhttp%253A%252F%252F11298683.s61i.faiusr.com%252F2%252FAD0I_86xBRACGAAgqPW1wAUo6cjlDTCTAjisAg.jpg"><img
+                        src="./豆瓣.png" alt=""><a></span>
+            <span class="tb"><a href="https://tieba.baidu.com/"><img src="./贴吧.png" alt=""><a></span>
+            <span class="kxw"><ahref="http://www.kaixin001.com/login/open_login.php?flag=1&url=%2Frest%2Frecords.php%3Fcontent%3D%25E3%2580%259011%25E7%2589%2587%25E7%2594%25B5%25E7%2583%25AD%25E6%25B2%25B9%25E6%25B1%2580%25E5%258F%2596%25E6%259A%2596%25E5%2599%25A8%252F%25E7%2594%25B5%25E6%259A%2596%25E5%2599%25A8%25E3%2580%2591https%253A%252F%252Ffkdq01.icoc.me%252F%252Fpd.jsp%253F_sc%253D3%2526id%253D16%26style%3D11"><img src="./开心网 (1).png" alt=""><a></span>
+            <span class="wz"><img src="./复制.png" alt="" id="wz"></span>
+            
+        </div>
+<div class="box5">
+    <span class="fx1">上一页</span>
+    <span class="fx2"><button class="fx3">下一页</button ></span>
+</div>
+<div class="box6">
+    <div class="xqa1">
+        <div class="xqa2"><a href="#">产品详情</a></div>
+        <span class="xqa3"></span>
+<div class="xqa4"></div>
+<div class="rTop" id="rTop" onClick="toTop()"><a href="javascript:"title="回到顶部"><img src="./上箭头 (1).png"><a ></div>
+    </div>
+</div>
+
+<!-- 底片 -->
+<div class="box9">
+    <div class="out1">
+
+        <ul>
+            <li class="out">首页</li>
+            <li class="out">产品中心</li>
+            <li class="out">新闻动态</li>
+            <li class="out">关于我们</li>
+            <li class="out">服务中心</li>
+        </ul>
+        <hr class="out2">
+    </div>
+
+
+
+
+    <div class="out4">
+
+        <span class="out5">手机版 <span class="out6">|本站使用</span>
+            <img src="./box9.png" id="fk">凡科建站
+            <span>搭建</span>
+
+            <span class="out3">©2023 - 我的网站 版权所有</span>
+            <span class="out7">|管理登陆</span>
+        </span>
+
+    </div>
+</div>
+    </div>
+</body>
+<script src="https://lib.baomitu.com/jquery/1.12.4/jquery.js"></script>
+<script>
+
+    $(".wz").click(function () {
+
+
+        var a = prompt('您使用的是非IE核心浏览器，请按下 ctrl+c 复制网址到剪贴板')
+
+    })
+    // 拖动滚动条或滚动鼠标轮
+window.onscroll = function () {
+  if (document.body.scrollTop || document.documentElement.scrollTop) {
+   $('#rTop').slideDown(500)
+  } else {
+    $('#rTop').slideUp(500)
+    // button1style.cursor = "hand"
+  }
+//   $('.rTop').slideDown(2000)
+}
+// 点击返回顶部按钮
+function toTop() {
+  window.scrollTo('0', '0');
+  button1style = document.getElementById('rTop').style;
+  button1style.display = "none"
+  //button1style.cursor="hand"
+  document.getElementById('rTop').style.display = "none"
+}
+
+$('.rTop').hover(function(){
+    $(this).fadeOut(1000)
+})
+</script>
+
+</html>
